@@ -24,7 +24,7 @@
                     <a class="navbar-brand" href="#"><img src="images/sisense_logo.png" alt=""></a>
                 </div>
 
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="collapse navbar-collapse">
 
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#">Why Sisense</a></li>
@@ -39,14 +39,35 @@
                 </div>
             </div>
         </nav>
-        <div class="flex-center position-ref full-height">
-
+        <div class="main">
+            <div class="background">
+                <img src="../images/layer_1.png">
+            </div>
             <div class="content">
-                <div class="title m-b-md">
-                    Laravel
+                <div class="top">
+                    <div class="head">
+                        <h1><span class="color">agile bi</span> for everyone</h1>
+                    </div>
+                    <div class="promo-items container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4 item">
+                                <img src="../images/readicl_innovation_icon.png">
+                                <h3>Radical <div class="strong">Innovation</div></h3>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 item">
+                                <img src="../images/instant_impact_icon.png">
+                                <h3>Instant <div class="strong">Impact</div></h3>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 item">
+                                <img src="../images/CS_icon.png">
+                                <h3>Obsessed with <div class="strong">Customer Success</div></h3>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
+                <div class="bottom"></div>
             </div>
         </div>
+
     </body>
 </html>

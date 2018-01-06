@@ -1,10 +1,18 @@
  /*Fonts*/
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@font-face {
+     font-family: Bebas Neue;
+     src: url("/fonts/bebas_neue/BebasNeue Bold.otf");
+}
+body{
+    font-family: Open Sans,sans-serif;
+}
 
 nav.navbar{
     box-shadow: 0 2px 14px 0 rgba(0,0,0,.12);
     -webkit-box-shadow: 0 2px 14px 0 rgba(0,0,0,.12);
     background-color: #fff;
+    font-size: 18px;
 }
 
 nav.navbar .container-fluid{
@@ -14,4 +22,43 @@ nav.navbar .container-fluid{
 a.navbar-brand{
     top: -5px;
     position: relative;
+}
+
+nav.navbar button {
+    margin: 7px 0;
+}
+
+button.btn {
+    background: #ffcb05;
+}
+.main .background img{
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    filter: brightness(60%);
+    top: 30px;
+    right: 0;
+}
+.content{
+    position: relative;
+    top:70px;
+}
+.content .top{
+    margin-top: 60px;
+    text-align: center;
+    color: #fff;
+}
+.content .head h1{
+    font-size: 6vw;
+    font-family: Bebas Neue,sans-serif;
+    text-transform: uppercase;
+}
+.content .head h1 .color{
+     color: #ffcb05;
+}
+
+.promo-items h3 .strong{
+    font-weight: bold;
+    line-break: strict;
 }
