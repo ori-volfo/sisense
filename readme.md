@@ -15,4 +15,5 @@ Built with Laravel 5.5, and MySQL DB
 6. Initialize your DB and tables with the file sisense-db.sql
 
 ## Run project
-* Run command `php artisan serve` in terminal
+* Run command `php artisan serve` in terminal,  and open your browser at [localhost:8000](localhost:8000/)
+

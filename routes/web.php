@@ -11,4 +11,9 @@
 |
 */
 
-Route::get('/', 'HomeController@index');
+
+Route::get('/', function () {
+    return view('main');
+});
+
+Route::get('/getUsers', 'UserController@getUsers');

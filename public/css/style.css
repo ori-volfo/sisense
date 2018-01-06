@@ -1,6 +1,17 @@
-
+ /*Fonts*/
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
 
 nav.navbar{
     box-shadow: 0 2px 14px 0 rgba(0,0,0,.12);
     -webkit-box-shadow: 0 2px 14px 0 rgba(0,0,0,.12);
+    background-color: #fff;
+}
+
+nav.navbar .container-fluid{
+    margin: 8px 15px;
+}
+
+a.navbar-brand{
+    top: -5px;
+    position: relative;
 }
