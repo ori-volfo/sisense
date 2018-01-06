@@ -46,7 +46,7 @@
             <div class="content">
                 <div class="top">
                     <div class="head">
-                        <h1><span class="color">agile bi</span> for everyone</h1>
+                        <h1><span class="color">Agile BI</span> for everyone</h1>
                     </div>
                     <div class="promo-items container">
                         <div class="row">
@@ -63,11 +63,59 @@
                                 <h3>Obsessed with <div class="strong">Customer Success</div></h3>
                             </div>
                         </div>
+                        <div class="promo-text">
+                            Data is complex, but getting the answers you need shouldn’t be. Insights should be instantly accessible to everyone, everywhere regardless of their technical ability. Sisense simplifies every step of the analytics process – from data preparation to discovery of insights.
+                        </div>
+                        <div class="promo-button">
+                            <button class="btn">
+                                Watch Demo
+                            </button>
+                        </div>
                     </div>
+                    <div class="divide-triangle"></div>
                 </div>
-                <div class="bottom"></div>
+
+                <div class="bottom">
+
+                    <div class="head">
+                        <h2 class="vertical">What makes<div>us different</div></h2>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 item">
+                                <h3>Radically <strong>Innovative</strong> Technology</h3>
+                                <p class="text">
+                                    If you want to outpace the competition, you’ll need a partner that’s as progressive as you are. From our core In-Chip™ technology to how we’ve built IoT, machine learning, and AI into our cutting edge BI platform, Sisense is leading innovation in the agile business analytics market. Every innovation is designed to help business users easily and quickly get the answers they need from complex data.
+                                </p>
+                                <button class="text btn">Learn About Sisense BI Technology</button>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 item">
+                                    <img class="video-image" src="../images/image.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                </div>
+
             </div>
         </div>
-
+        <footer class="footer">
+            <div class="row">
+                <div class="col-xs-12 col-sm-5 copyright footer-item">
+                    Copyright © 2018 Sisense Inc. All rights reserved.
+                </div>
+                <div class="col-xs-12 col-sm-7">
+                    <ul class="nav navbar-nav navbar-right footer-item">
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                        <li>
+                            <button class="btn">Start Now</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
