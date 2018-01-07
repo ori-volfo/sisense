@@ -6,6 +6,8 @@
 }
 body{
     font-family: Open Sans,sans-serif;
+    padding: 0px !important;
+    overflow: auto !important;
 }
 h1, h2{
     font-family: Bebas Neue,sans-serif;
@@ -154,4 +156,32 @@ footer .btn{
     font-size: 18px;
     position: relative;
     bottom: 3px;
+}
+
+.modal-dialog{
+    max-width: 385px;
+}
+
+.modal-dialog .form-submit{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.modal-dialog .form-submit .btn{
+    padding: 10px 20px;
+    width: 100%;
+    font-size: 18px;
+}
+.modal-dialog .help-block{
+    color: #a94442;
+    display: none;
+}
+.modal-dialog .form-group.error .help-block{
+    display: block;
+}
+.modal-dialog .form-group.error .form-control{
+    border: 2px solid #a94442;
+}
+.modal-dialog .form-group.valid .form-control{
+    border: 2px solid #3c763d;
 }
