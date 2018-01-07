@@ -1,6 +1,9 @@
 $(document).ready(function(){
 
-    $('#submit').click(function(e){
+    var submitBtn = $('#submit');
+
+    submitBtn.click(function(e){
+        e.preventDefault();
         var form = $('#registration-form').serializeArray();
         // console.log(form);
 
@@ -28,6 +31,31 @@ $(document).ready(function(){
         valid(this);
     });
 
+    function valid(_this){
+        $(_this).data('valid',true).parent().addClass('valid').removeClass('error');
+        validateForm();
+    }
+
+    function inValid(_this){
+        $(_this).data('valid',false).parent().addClass('error').removeClass('valid');
+        validateForm();
+    }
+
+    function validateForm(){
+        var formFields = [];
+
+        $('#registration-form .form-control').each(function(key,field){
+            formFields.push($(field).data('valid'));
+        });
+        var formIsValid = formFields.every(function(valid){return valid});
+
+        if(formIsValid){
+            submitBtn.removeAttr('disabled');
+        }
+        else{
+            submitBtn.attr('disabled','disabled');
+        }
+    }
 });
 
 function validateEmail(email) {
@@ -38,12 +66,4 @@ function validateEmail(email) {
 function validateName(str){
     var reg = /^[a-zA-Z ]+$/;
     return reg.test(str.toLowerCase());
-}
-
-function valid(_this){
-    $(_this).parent().addClass('valid').removeClass('error');
-}
-
-function inValid(_this){
-    $(_this).parent().addClass('error').removeClass('valid');
 }

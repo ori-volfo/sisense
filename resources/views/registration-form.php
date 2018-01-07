@@ -37,7 +37,7 @@
                                 <div class="help-block with-errors">Please choose a timeframe.</div>
                             </div>
                             <div class="form-submit">
-                                <button class="btn" id="submit">Start Now!</button>
+                                <button class="btn" id="submit" disabled>Start Now!</button>
                             </div>
                         </form>
                     </div>
