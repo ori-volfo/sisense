@@ -47,7 +47,30 @@ $(document).ready(function(){
     submitBtn.click(function(e){
         e.preventDefault();
         var form = $('#registration-form').serializeArray();
-        console.log(form);
+
+        form[3].value = selectValues[parseInt(form[3].value)]; // replace Select field numeric's value with text
+
+        $.ajax({
+            type: "POST",
+            url: '/user/register',
+            data: form,
+            dataType: "text",
+            success: function(data){
+                // TODO : handle success
+            },
+            error: function(data){ console.log('500');
+            var errorMsg = JSON.parse(data.responseText).message;
+                console.error(errorMsg);
+
+                if(errorMsg.indexOf("Duplicate entry") > -1){
+                    // TODO : handle email exists error
+                }
+                else{
+                    // TODO : handle general error
+                }
+
+            }
+        });
 
     });
 
@@ -74,3 +97,9 @@ function validateName(str){
     var reg = /^[a-zA-Z ]+$/;
     return reg.test(str.toLowerCase());
 }
+
+var selectValues = {
+    1: 'Over 6 months',
+    2: '3 - 6 months',
+    3: 'Less than 3 months'
+};

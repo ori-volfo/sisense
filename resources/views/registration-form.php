@@ -46,4 +46,12 @@
             </div>
         </div>
     </div>
+    <script>
+        // Set up Laravels validation token
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+    </script>
 @show

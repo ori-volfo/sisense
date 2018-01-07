@@ -23,7 +23,7 @@ class User extends \Eloquent
         'first', 'last', 'email', 'timeframe',
     ];
     protected $guarded = array('primaryKey');
-    public $timestamps = array('created');
+    public $timestamps = false;
 
     public static function getAllUsers(){
         $usersRaw = User::all();
@@ -33,5 +33,15 @@ class User extends \Eloquent
             $users[] = $user->original;
         }
         return $users;
+    }
+
+    public static function addUser($input){
+        $user = new User;
+        $user->first = $input['first'];
+        $user->last = $input['last'];
+        $user->email = $input['email'];
+        $user->timeframe = $input['timeframe'];
+        $response = $user->save();
+        return $response;
     }
 }

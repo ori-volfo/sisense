@@ -8,6 +8,7 @@ use Illuminate\Routing\Controller as BaseController;
 //use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use DB;
 use App\User;
+use Illuminate\Support\Facades\Input;
 
 class UserController extends BaseController {
 
@@ -32,5 +33,18 @@ class UserController extends BaseController {
 //		return View('main', ['results' => $results]);
         return $results;
 	}
+
+	public function registerUser(){
+        $input = Input::all();
+        $response = User::addUser($input);
+        if($response === true){
+            return response('User added', 200)
+                ->header('Content-Type', 'text/plain');
+        }
+        else{
+            return response($response->message, 500)
+                ->header('Content-Type', 'text/plain');
+        }
+    }
 
 }
