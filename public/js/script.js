@@ -2,13 +2,7 @@ $(document).ready(function(){
 
     var submitBtn = $('#submit');
 
-    submitBtn.click(function(e){
-        e.preventDefault();
-        var form = $('#registration-form').serializeArray();
-        // console.log(form);
-
-    });
-
+    // Fields validations
     $('#email').focusout(function(e){
        if(!validateEmail(e.target.value)){
            inValid(this);
@@ -31,16 +25,8 @@ $(document).ready(function(){
         valid(this);
     });
 
-    function valid(_this){
-        $(_this).data('valid',true).parent().addClass('valid').removeClass('error');
-        validateForm();
-    }
 
-    function inValid(_this){
-        $(_this).data('valid',false).parent().addClass('error').removeClass('valid');
-        validateForm();
-    }
-
+    // Check entire form
     function validateForm(){
         var formFields = [];
 
@@ -56,8 +42,29 @@ $(document).ready(function(){
             submitBtn.attr('disabled','disabled');
         }
     }
+
+    // Submit to backend
+    submitBtn.click(function(e){
+        e.preventDefault();
+        var form = $('#registration-form').serializeArray();
+        console.log(form);
+
+    });
+
+    // Helper functions
+    function valid(_this){
+        $(_this).data('valid',true).parent().addClass('valid').removeClass('error');
+        validateForm();
+    }
+
+    function inValid(_this){
+        $(_this).data('valid',false).parent().addClass('error').removeClass('valid');
+        validateForm();
+    }
 });
 
+
+// REGEX functions
 function validateEmail(email) {
     var reg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return reg.test(email.toLowerCase());
