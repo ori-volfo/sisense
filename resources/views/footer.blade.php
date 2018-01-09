@@ -9,7 +9,7 @@
                     <li><a href="#">Terms of Use</a></li>
                     <li><a href="#">Sitemap</a></li>
                     <li>
-                        <button class="btn">Start Now</button>
+                        <button class="btn" type="button" data-toggle="modal" data-target="#myModal">Start Now</button>
                     </li>
                 </ul>
             </div>
