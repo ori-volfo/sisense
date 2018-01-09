@@ -107,11 +107,9 @@ button.btn {
 }
 
 .divide-triangle{
-    background: url(https://cdn.sisense.com/dotcom/images/vectors/white-bg-rl.svg);
     position: relative;
     height: 14.5vw;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    top: 1px;
 }
 .bottom .item h3{
     font-size: 48px;

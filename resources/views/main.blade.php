@@ -53,7 +53,9 @@
                             </button>
                         </div>
                     </div>
-                    <div class="divide-triangle"></div>
+                    <div class="divide-triangle" >
+                        @include('divide-triangle')
+                    </div>
                 </div>
 
                 <div class="bottom">
