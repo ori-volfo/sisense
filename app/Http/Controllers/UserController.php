@@ -27,11 +27,9 @@ class UserController extends BaseController {
 
 	public function getUsers()
 	{
-        $results = User::getAllUsers();
-//        dd($results);
+        $users = User::getAllUsers();
 
-//		return View('main', ['results' => $results]);
-        return $results;
+		return View('users-list', ['users' => $users]);
 	}
 
 	public function registerUser(){
