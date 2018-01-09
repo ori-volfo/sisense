@@ -185,3 +185,35 @@ footer .btn{
 .modal-dialog .form-group.valid .form-control{
     border: 2px solid #3c763d;
 }
+
+ /** notifications **/
+.modal-dialog .notify {
+     display: none;
+     background: #fff;
+     padding: 12px 18px;
+     max-width: 400px;
+     margin: 0 auto;
+     cursor: pointer;
+     -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+     border-radius: 3px;
+     margin-bottom: 20px;
+     box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px 0px;
+}
+
+.modal-dialog .notify h1 { margin-bottom: 6px; }
+
+.modal-dialog .successbox h1 { color: #678361; }
+.modal-dialog .errorbox h1 { color: #6f423b; }
+
+.modal-dialog .successbox h1:before, .successbox h1:after { background: #cad8a9; }
+.modal-dialog .errorbox h1:before, .errorbox h1:after { background: #d6b8b7; }
+
+.modal-dialog .notify .alerticon {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#emailErrMsg, #generalErrMsg{
+    display: none;
+}

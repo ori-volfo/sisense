@@ -12,7 +12,7 @@ $(document).ready(function(){
        }
     });
 
-    $('#first, #last').keyup(function(e){
+    $('#first, #last').change(function(e){
         if(!validateName(e.target.value)){
             inValid(this);
         }
@@ -56,22 +56,27 @@ $(document).ready(function(){
             data: form,
             dataType: "text",
             success: function(data){
-                // TODO : handle success
+                $('.modal-content').hide();
+                $('.successbox').fadeIn();
             },
-            error: function(data){ console.log('500');
+            error: function(data){
             var errorMsg = JSON.parse(data.responseText).message;
-                console.error(errorMsg);
-
+            console.error(errorMsg);
+                $('.modal-content').hide();
                 if(errorMsg.indexOf("Duplicate entry") > -1){
-                    // TODO : handle email exists error
+                    $('#emailErrMsg').show();
                 }
                 else{
-                    // TODO : handle general error
+                    $('#generalErrMsg').append('<div>'+errorMsg+'</div>').show();
                 }
-
+                $('.errorbox').fadeIn();
             }
         });
 
+    });
+    $('#backBtn').click(function(){
+        $('.errorbox').hide();
+        $('.modal-content').fadeIn();
     });
 
     // Helper functions
