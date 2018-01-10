@@ -4,7 +4,8 @@ Built with Laravel 5.5, and MySQL DB
 
 ## Requirements
 * PHP >= 7.0.0
-* MySQL
+* MySQL DB
+* Composer dependency manager
 
 ## Setting up the Environment
 1. Clone using git or copy this directory to your local environment
@@ -15,6 +16,7 @@ Built with Laravel 5.5, and MySQL DB
 
 ## Run project
 * Run command `php artisan serve` in terminal,  and open your browser at [localhost:8000](localhost:8000/)
+
 
 ## Actions
 * Press "Start Now" for registration form
