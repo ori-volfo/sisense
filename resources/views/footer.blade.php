@@ -4,6 +4,7 @@
             <div class="flex-item">
                 Copyright &copy; 2018 Sisense Inc. All rights reserved.
             </div>
+            <div class="flex-item flex-item-space"></div>
             <div class="flex-item hidden-xs">
                 <ul class="nav navbar-nav navbar-right footer-item">
                     <li><a href="#">Terms of Use</a></li>

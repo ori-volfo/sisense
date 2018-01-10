@@ -159,7 +159,9 @@ footer .flex-container {
     justify-content: space-around;
     align-items: center;
 }
-
+footer .flex-item-space{
+    flex-grow: 0.5;
+}
 footer .navbar-nav>li>a{
     color: #fff;
     padding: 5px 15px;
