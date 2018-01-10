@@ -22,7 +22,7 @@
 
         <div class="main">
             <div class="background">
-                <img src="../images/layer_1.png">
+                <img src="../images/layer_1.jpg">
             </div>
             <div class="content">
                 <div class="top">
@@ -65,15 +65,15 @@
                     </div>
                     <div class="container">
                         <div class="row">
-                            <div class="col-xs-12 col-sm-6 item">
+                            <div class="col-xs-12 col-sm-6 item vcenter">
                                 <h3>Radically <strong>Innovative</strong> Technology</h3>
                                 <p class="text">
                                     If you want to outpace the competition, you’ll need a partner that’s as progressive as you are. From our core In-Chip&trade; technology to how we’ve built IoT, machine learning, and AI into our cutting edge BI platform, Sisense is leading innovation in the agile business analytics market. Every innovation is designed to help business users easily and quickly get the answers they need from complex data.
                                 </p>
                                 <button class="text btn">Learn About Sisense BI Technology</button>
                             </div>
-                            <div class="col-xs-12 col-sm-6 item">
-                                    <img class="video-image" src="../images/image.png">
+                            <div class="col-xs-12 col-sm-6 item vcenter">
+                                    <img class="video-image" src="../images/image.jpg">
                             </div>
                         </div>
                     </div>

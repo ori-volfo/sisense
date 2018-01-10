@@ -41,9 +41,7 @@ button.btn {
      background: #f2b900;
  }
 .main .background img{
-    max-width: 100%;
-    width: auto;
-    height: auto;
+    width: 100%;
     position: fixed;
     filter: brightness(60%);
     top: 30px;
@@ -97,6 +95,9 @@ button.btn {
     position: absolute;
     width: 100%;
 }
+.bottom .container{
+    padding-top: 50px;
+}
 .bottom .head h2.vertical{
     color: #e5e5e5;
     font-size: 5vw;
@@ -117,8 +118,12 @@ button.btn {
     bottom: -1px;
     width: 100%;
 }
+.bottom .item{
+    padding: 0 30px;
+}
 .bottom .item h3{
     font-size: 48px;
+    color: black;
 }
 .bottom .item .text{
     margin: 15px 0;
@@ -130,6 +135,16 @@ button.btn {
 .bottom .video-image{
     width: 100%;
     margin-top: 20px;
+    cursor: pointer;
+}
+.bottom .row{
+    display: initial;
+}
+.bottom .vcenter{
+    vertical-align: middle;
+    display: inline-block;
+    float: none;
+    width: 49%;
 }
 footer{
     position: relative;
@@ -144,9 +159,6 @@ footer .flex-container {
     justify-content: space-around;
     align-items: center;
 }
-footer .flex-item{
-    height: 25px;
-}
 
 footer .navbar-nav>li>a{
     color: #fff;
@@ -159,8 +171,7 @@ footer .navbar-nav>li>a:hover{
 
 footer .btn{
     font-size: 18px;
-    position: relative;
-    bottom: 3px;
+    padding: 2px 8px;
 }
 
 .modal-dialog{
@@ -221,4 +232,58 @@ footer .btn{
 }
 #emailErrMsg, #generalErrMsg{
     display: none;
+}
+
+/*Responsive design*/
+
+@media only screen and (max-width: 1330px) {
+    .main .background img{
+        width: 150%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    nav.navbar{
+         font-size: 15px;
+    }
+
+    .btn{
+        padding: 4px 10px;
+    }
+    .content .top{
+        margin-top: 25px;
+    }
+    .bottom .head h2.vertical{
+        top: -40px;
+    }
+    .promo-items{
+        padding-bottom: 17.5vw;
+        font-size: 17px;
+    }
+    footer{
+        font-size: 15px;
+    }
+    footer .btn{
+        font-size: 15px;
+        vertical-align: middle;
+        vertical-align: -webkit-baseline-middle;
+    }
+    .nav>li>a{
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .main .background img{
+        width: 250%;
+    }
+    .promo-items{
+        padding-bottom: 25.5vw;
+    }
+    .divide-triangle{
+        height: 20vw;
+    }
+    .bottom .vcenter{
+        width: initial;
+    }
 }

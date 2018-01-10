@@ -4,9 +4,14 @@
             <div class="navbar-header">
                 <a href="/getUsers" class="navbar-brand" target="popup"
                    onclick="window.open('/getUsers','popup','width=800,height=600'); return false;"><img src="images/sisense_logo.png" alt=""></a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
             </div>
 
-            <div class="collapse navbar-collapse">
+            <div class="collapse navbar-collapse" id="myNavbar">
 
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#">Why Sisense</a></li>
