@@ -102,7 +102,7 @@ function validateName(str){
     var reg = /^[a-zA-Z ]+$/;
     return reg.test(str.toLowerCase());
 }
-
+// Select box text values
 var selectValues = {
     1: 'Over 6 months',
     2: '3 - 6 months',
