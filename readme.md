@@ -17,7 +17,7 @@ Built with Laravel 5.5, JQuery 3.2, and MySQL DB
 5. Initialize your DB by running the **sisense_db.sql** file as a query in your MySQL database
 
 ## Run project
-* Run command `php artisan serve` in terminal,  and open your browser at [localhost:8000](localhost:8000/)
+* Run command `php artisan serve` in terminal,  and open your browser at [localhost:8000](http://localhost:8000/)
 
 
 ## Actions
